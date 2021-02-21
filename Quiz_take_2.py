@@ -12,6 +12,7 @@ quiz = {animals_questions: [("All lionesses in a pride", True),
                          ("Another capitals question", True),
                          ("Last capitals question", False)],
 
+        # what is this for
         # math_questions: [("20 is log 100 for base 1o", False),
         #              ("Another math question", True),
         #              ("Last math question", False)]
