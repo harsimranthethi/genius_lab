@@ -1,4 +1,4 @@
-animals_questions = 'Animals Questions'
+animals_questions = 'Animal Questions'
 capitals_questions = 'Capitals Questions'
 math_questions = 'Math Questions'
 
