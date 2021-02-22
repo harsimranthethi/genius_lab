@@ -5,8 +5,8 @@ math_questions = 'Math Questions'
 questions = [animals_questions, capitals_questions, math_questions]
 
 quiz = {animals_questions: [("All lionesses in a pride", True),
-                        ("What is the fastest animal in the world?", Cheetah),
-                        ("How many wolves did the largest recorded pack have?",37)],
+                        ("What is the fastest animal in the world?", True),
+                        ("How many wolves did the largest recorded pack have?",False)],
 
         capitals_questions: [("What is the capital city of Egypt?\n),
                          ("Another capitals question", True),
@@ -60,3 +60,5 @@ print ("\nYou chose the {}\n".format(quiz_name))
 quiz_questions = quiz[quiz_name]
 for q in (quiz_questions):
     print("Your answer is: {}\n".format(str(get_answer(q[0], q[1]))))
+
+# This is a sample file
