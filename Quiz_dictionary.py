@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import random
 q1 = """The place of origin of an earthquake is called:
 a.Epicentre\nb.Seismal\nc.Focus\nd.Amphidromic Point"""
@@ -19,3 +20,4 @@ for i in rand_ques:
     else:
         print("Sorry, wrong answer")
 print("Final score is:",score)
+
