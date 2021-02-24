@@ -1,21 +1,13 @@
+import tkinter
 from tkinter import *
 
-window = Tk()
+root = tkinter.Tk()
+root.title("Quiz Master")
+root.geometry("800x700")
 
-window.title("Welcome to LikeGeeks app")
+image1 = PhotoImage(file="butterfly.gif")
 
-window.geometry('350x200')
+labelimage = Label(root,image = image1)
+labelimage.pack()
 
-lbl = Label(window, text="Hello")
-
-lbl.grid(column=0, row=0)
-
-def clicked():
-
-    lbl.configure(text="Button was clicked !!")
-
-btn = Button(window, text="Click Me", command=clicked)
-
-btn.grid(column=1, row=0)
-
-window.mainloop()
+root.mainloop()
