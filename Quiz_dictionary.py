@@ -22,7 +22,7 @@ a.Dili\nb.Manila\c.Marawi\nd.Jakarta"""
 questions = {q1:"c",q2:"a",q3:"c",q4:"d",q5:"a",q6:"c",q7:"a",q8:"c",q9:"d",q10:"b"} # Question-Answer dictionary
 
 score = 0
-rand_ques = random.sample(list(questions),2) # To randomly select 2 questions
+rand_ques = random.sample(list(questions),5) # To randomly select 5 questions
 for i in rand_ques:
     print(i)
     print()
