@@ -29,7 +29,7 @@ q14 = """Which of these cities is not a national capital?
 a.Sydney\nb.Prague\nc.Cairo\nd.Bangkok"""
 q15 = """Which was the first newspaper of India?
 a.The Hindu\nb.Bengal gazette\nc.Amrit Bazar Patrika\nd.The Bombay Chronicle"""
-q16 = """Who is the prime minister of Chandragupta Mourya?
+q16 = """Who is the prime minister of Chandragupta Maurya?
 a.Saktar\nb.Birbal\nc.Kautilya\nd.Chavundaraya"""
 q17 = """when the state of Mysore renamed as Karnataka?
 a.1947\nb.1960\nc.1970\nd.1956"""
