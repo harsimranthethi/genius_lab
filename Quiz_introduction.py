@@ -47,3 +47,16 @@ def loginPage(logdata):
     
     
     login.mainloop()
+    
+    
+    
+    
+    
+    
+    
+    
+The quiz consists of 5 questions.Each question in the quiz is of multiple-choice format.
+ Read each question carefully,and select a suitable answer for each of the questions. The questions in the quiz are based on general subjects.
+ Each correct or incorrect response will result in an appropriate feedback immediately on screen.
+After responding to a question, click on the "Next Question" button at the bottom to go to the next question. The total score for the quiz is based on your responses to all questions.
+In the end of the quiz, 
