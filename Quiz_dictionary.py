@@ -41,7 +41,15 @@ q20 = """ The correct abbreviation of 'BEL' is:
 a.Bharath Electronics Limited\nb.Bangalore Electronics Limited\nc.Belagaum Electronics Limited\nd.Bellary Electronics Limited"""
 q21 = """Who is the odd one out?
 a.Indira Gandhi\nb.R.K.Narayan\nc.Dr.Rajendra Prasad\nd.Smt Prathibha Patil"""
-questions = {q1:"c",q2:"c",q3:"c",q4:"d",q5:"c",q6:"c",q7:"a",q8:"c",q9:"d",q10:"b",q11:"b",q12:"c",q13:"d",q14:"a",q15:"b",q16:"c",q17:"d",q18:"b",q19:"d",q20:"a",q21:"b"} # Question-Answer dictionary
+q22 = """Rama is an avathara of which god?
+a.Brahma\nb.Indra\nc.Shiva\nd.vishnu"""
+q23 = """who was the wife of Dhritarashtra?
+a.Sita\nb.Gandhari\nc.Satarupa\d.Kunti"""
+q24 = """who is the writer of Ramayana?
+a.valmiki\nb.ved vyas\nc.Shri krishna\nd.Rama"""
+q25 = """what was the true name of Bhishma?
+a.Karna\nb.Arjuna\nc.Devabrata\nd.Pallove"""
+questions = {q1:"c",q2:"c",q3:"c",q4:"d",q5:"c",q6:"c",q7:"a",q8:"c",q9:"d",q10:"b",q11:"b",q12:"c",q13:"d",q14:"a",q15:"b",q16:"c",q17:"d",q18:"b",q19:"d",q20:"a",q21:"b",q22:"d",q23:"b",q24:"a",q25:"c"} # Question-Answ,er dictionary
 
 score = 0
 #a = input("How many questions would you like?: ")
