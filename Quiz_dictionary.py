@@ -61,9 +61,6 @@ for i in rand_ques:
         print()
 print("Final score is:",score,"/ 5")
 
-if score >= 3:
-    #print("You get a bonus question!")
-    response = input("Would you like a bonus question?: ")
-    if response == 
+
 
 
