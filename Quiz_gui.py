@@ -83,7 +83,7 @@ def correct():
     labelresulttext_bonus.pack()
     score = score + 10
     labelresulttext_bonus.configure(text = "Correct!\nYour score is:{}\nThanks for playing!".format(score),foreground = "#E77471")
-    quitcorrect = Button(root,text="Quit",fg = "blue",height = 2,width=7,background = "#ffffff",font = ("Comic sans MS",30),command = quit)
+    quitcorrect = Button(root,text="Quit",fg = "#ffffff",height = 2,width=7,background = "#FF0000",font = ("Comic sans MS",30),command = quit)
     quitcorrect.pack(pady = (15,30))
 
 
@@ -136,19 +136,19 @@ def showresult(score):
     labelimage.pack(pady=(150,30))
     labelresulttext = Label(root,font = ("Consolas",30),background = "#ffffff")
     labelresulttext.pack()
-    quitbutton = Button(root,text="Quit",fg = "blue",height = 2,width=7,background = "#ffffff",font = ("Comic sans MS",30),command = quit)
+    quitbutton = Button(root,text="Quit",fg = "#ffffff",height = 2,width=7,background = "#FF0000",font = ("Comic sans MS",30),command = quit)
     quitbutton.pack(pady = (15,30))
     bonus = Frame(root)
     bonus.pack(pady=(5,20))
-    Button(bonus,text="Bonus",fg = "green",height = 2,width=7,background = "#ffffff",font = ("Comic sans MS",30),command = bonround).pack()
+    Button(bonus,text="Bonus",fg = "C68E17",height = 2,width=7,background = "#FFFF00",font = ("Comic sans MS",30),command = bonround).pack()
 
     if score >= (user*5)//2:
-        image = PhotoImage(file = "download.png")
+        image = PhotoImage(file = "gif.gif")
         labelimage.configure(image = image)
         labelimage.image = image
         labelresulttext.configure(text = "Nice Work!\nYour score is:{}".format(score),foreground = "#E77471")
     else:
-        image = PhotoImage(file = "bear.gif")
+        image = PhotoImage(file = "meme.png")
         labelimage.configure(image = image)
         labelimage.image = image
         labelresulttext.configure(text = "You can do better\nYour score is: {}".format(score))
@@ -202,23 +202,23 @@ def startquiz(): # Question and MC options
     int_answer.destroy()
 
     global lblquestion,r1,r2,r3,r4
-    lblquestion = Label(root,text = questions[indexes[0]],font = ("Consolas",25),width = 300,justify = "center",wraplength = 400,background = "#ffffff",foreground = "#FC6C85")
+    lblquestion = Label(root,text = questions[indexes[0]],font = ("Consolas",25),width = 300,justify = "center",wraplength = 400,background = "#E0FFFF",foreground = "#254117")
     lblquestion.pack(pady = (30,50))
 
     global radiovar
     radiovar = IntVar()
     radiovar.set(-1)
 
-    r1 = Radiobutton(root,text = answers_choice[indexes[0]][0],font = ("Times",20),value = 0,variable = radiovar,background = "#ffffff",height = 2,width = 25,foreground = "#E77471",command = selected,)
+    r1 = Radiobutton(root,text = answers_choice[indexes[0]][0],font = ("Times",20),value = 0,variable = radiovar,background = "#C6DEFF",height = 2,width = 25,foreground = "#151B8D",command = selected,)
     r1.pack(pady = (30,50))
 
-    r2 = Radiobutton(root,text = answers_choice[indexes[0]][1],font = ("Times",20),value = 1,variable = radiovar,background = "#ffffff",height = 2,width = 25,foreground = "#E77471",command = selected,)
+    r2 = Radiobutton(root,text = answers_choice[indexes[0]][1],font = ("Times",20),value = 1,variable = radiovar,background = "#C6DEFF",height = 2,width = 25,foreground = "#151B8D",command = selected,)
     r2.pack(pady = (30,50))
     
-    r3 = Radiobutton(root,text = answers_choice[indexes[0]][2],font = ("Times",20),value = 2,variable = radiovar,background = "#ffffff",height = 2,width = 25,foreground = "#E77471",command = selected,)
+    r3 = Radiobutton(root,text = answers_choice[indexes[0]][2],font = ("Times",20),value = 2,variable = radiovar,background = "#C6DEFF",height = 2,width = 25,foreground = "#151B8D",command = selected,)
     r3.pack(pady = (30,50))
     
-    r4 = Radiobutton(root,text = answers_choice[indexes[0]][3],font = ("Times",20),value = 3,variable = radiovar,background = "#ffffff",height = 2,width = 25,foreground = "#E77471",command = selected,)
+    r4 = Radiobutton(root,text = answers_choice[indexes[0]][3],font = ("Times",20),value = 3,variable = radiovar,background = "#C6DEFF",height = 2,width = 25,foreground = "#151B8D",command = selected,)
     r4.pack(pady = (30,50))
 
 
@@ -254,11 +254,11 @@ def startispressed(): # Start button command
     rules.destroy()  
     fm.destroy()
     
-    int_text = Label(root,text = "How many questions would you like?",fg = "#2481BE",bg = "#ffffff",font = ("Consolas",25),width = 40,height = 3)
+    int_text = Label(root,text = "How many questions would you like?",fg = "#254117",bg = "#48CCCD",font = ("Consolas",25),width = 40,height = 3)
     int_text.pack()
     int_box = Entry(root)
     int_box.pack(pady = 20)
-    int_button = Button(root,text = "Start",height = 2,width = 10,command = number,bg = "#ffffff",fg = "#1B9324")
+    int_button = Button(root,text = "Start",height = 2,width = 10,command = number,bg = "#438D80",fg = "#ffffff")
     int_button.pack(pady = (10,20))
     int_answer = Label(root)
     int_answer.pack(pady = (20,26))
