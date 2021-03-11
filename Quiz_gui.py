@@ -5,28 +5,13 @@ import random
 questions  = ["The place of origin of an earthquake is called:",
 "Who is the english physicist responsible for the Big Bang Theory?",
 "The busiest  sea route is:",
-"Who is known as the 'Nightingale of India?",
- "Which of the following has no skeleton at all?",
-"Where is the headquarters of SAARC?",
-"Who was the first president of Russia?",
-"Which two calender months are named after Roman Emperors?",
-"The world's most populated country is:",
-"The capital of Philippines is:",
-"The Great Barrier Reef is off the coast of which country?",
-"What is the world's smallest country?",
-"In which country is Mount Fuji located?",
-"Which of these cities is not a national capital?",
-"Which was the first newspaper of India?
-"Who is the prime minister of Chandragupta Maurya?",
-"when the state of Mysore renamed as Karnataka?",
-"which of the following is a 'classical' dance form?",
-"Dr.MS.Subbalakshmi has distinguished herself in the field of?",
-" The correct abbreviation of 'BEL' is:",
-"Who is the odd one out?",
-"Rama is an avathara of which god?",
-"who was the wife of Dhritarashtra?",
-"who is the writer of Ramayana?",
-"what was the true name of Bhishma?",]
+"This is a sample ques 4",
+"This is a sample ques 5",
+"This is a sample ques 6",
+"This is a sample ques 7",
+"This is a sample ques 8",
+"This is a sample ques 9",
+"This is a sample ques 10"]
 
 
 
@@ -34,31 +19,16 @@ answers_choice = [
 ["Epicentre","Seismal","Focus","Amphidromic Point"],
 ["Albert Einstein","Michael Skube","George Gamow","Roger Penrose"],
 ["The Mediterranean Red-Sea Route","The South Atlantic Route","The North Atlantic Route","The Pacific Route"],
-["Indira Gandhi","Kittur Rani Chennamma","Savithri Bai Phule","Sarojini Naidu"],
-["Starfish","Sponge","Jellyfish","Silver Fish"],
-["Dhaka","Jakarta","Kathmandu","Manila"],
-["Boris Yeltsin","Vladimir Putin","Dmitry Medvedev","Kokichi"],
-["July and June","December and May","July and August","March and April"],
-["USA","Russia","India","China"],
-["Dili","Manila","Marawi","Jakarta"],
-["Fiji","Australia","New Zealand","South africa"],
-["Monaco","Lichtenstein","Vatican city","Luxembourg"],
-["China","Peru","North Korea","Japan"],
-["Sydney","Prague","Cairo","Bangkok"],
-["The Hindu","Bengal gazette","Amrit Bazar Patrika","The Bombay Chronicle"],
-["Saktar","Birbal","Kautilya","Chavundaraya"],
-["1947","1960","1970","1956"],
-["Kalaripayattu","kathakali","Chhobia","Bhawai"],
-["Kathak","Bharath Natyam","Playing Violin","Vocal Music"],
-["Bharath Electronics Limited","Bangalore Electronics Limited","Belagaum Electronics Limited","Bellary Electronics Limited"],
-["Indira Gandhi","R.K.Narayan","Dr.Rajendra Prasad","Smt Prathibha Patil"],
-["Brahma","Indra","Shiva","vishnu"],
-["Sita","Gandhari","Satarupa","Kunti"],
-["valmiki","ved vyas","Shri krishna","Rama"],
-["Karna","Arjuna","Devabrata","Pallove"]
+["13","14","15","16"],
+["17","18","19","20"],
+["21","22","23","24"],
+["25","26","27","28"],
+["29","30","31","32"],
+["33","34","35","36"],
+["37","38","39","40"]
 ]
 
-answers = [2,2,2,3,2,2,0,2,3,1,1,2,3,0,1,2,3,1,3,0,1,3,1,0,2]
+answers = [2,2,2,1,1,1,1,1,1,1]
 answers_choice_bonus = [1]
 user_answer = []
 user_answerb = []
@@ -303,7 +273,7 @@ def startispressed(): # Start button command
 root = tkinter.Tk()
 root.title("Quiz Master")
 root.geometry("1200x900")
-root.config(background = "#ffffff")
+root.config(background = "#b1fb17")
 
 # First crown image
 image1 = PhotoImage(file="crown2.gif")
@@ -311,13 +281,13 @@ labelimage = Label(root,image = image1,background = "#ffffff",height = 400,width
 labelimage.pack()
 
 # Quiz Title
-labeltext = Label(root,text = "Quiz Master",font = ("Comic sans MS",44),background = "#ffffff")
+labeltext = Label(root,text = "Quiz Master",font = ("Comic sans MS",44),background = "#b1fb17")
 labeltext.pack(pady=(5,20))
 
 # Start Button
 fm = Frame(root)
 fm.pack(pady=(5,20))
-Button(fm,text="Start",fg = "green",height = 2,width=7,background = "#ffffff",font = ("Comic sans MS",30),command = startispressed).pack()
+Button(fm,text="Start",fg = "ffffff",height = 2,width=7,background = "#ffff00",font = ("Comic sans MS",30),command = startispressed).pack()
 
 # Instructions and rules
 instruction = Label(root,text = "Read the rules\nClick once you are ready",background = "#ffffff",font = ("Consolas",14),justify = "center")
@@ -325,8 +295,8 @@ instruction.pack(pady=(10,40))
 rules = Label(root,text = """The quiz consists of 5 questions.Each question in the quiz is of multiple-choice format.
  Read each question carefully,and select a suitable answer for each of the questions. The questions in the quiz are based on general subjects.
   Each correct or incorrect response will result in an appropriate feedback immediately on screen.
-After responding to a question, click on the "Next Question" button at the bottom to go to the next question. The total score for the quiz is based on your responses to all questions.
-In the end of the quiz, """,width=160,height=15,font = ("Times",15),background = "#48cccd",foreground = "#ffffff")
+The entered option will be the final and cannot be changed. The total score for the quiz is based on your responses to all questions.
+In the end of the quiz, you will be provided with a choice to answer a bonus question. """,width=160,height=15,font = ("Times",15),background = "#fff8c6",foreground = "#000000")
 rules.pack()
 
 root.mainloop() # To run
